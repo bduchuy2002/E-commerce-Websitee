@@ -2,12 +2,14 @@
     display: block;
     margin: 30px auto;
     width: 82%;
+    
 }
 .shopcategory-indexSort{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 170px;
+    
 }
 .shopcategory-sort{
     padding: 10px 20px;
@@ -22,6 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 80px;
+    gap:30px;
 }
 .shopcategory-loadmore{
     display: flex;
