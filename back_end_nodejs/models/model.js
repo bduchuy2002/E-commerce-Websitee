@@ -75,8 +75,29 @@ const product = mongoose.Schema( {
 
 });
 
+// User
+const user = mongoose.Schema({
+    name: {
+        type: String,
+        require:true,
+    },
+    email: {
+        type: String,
+        unique:true,
+    },
+    password: {
+        type:String,
+    },
+    cartData: {
+        type:Object,
+    },
+    date: {
+        type: Date,
+        default:Date.now,
+    },
+})
 
 let Product = mongoose.model("Product", product);
+let Users = mongoose.model("User", user);
 
-
-module.exports = {Product};
+module.exports = {Product,Users};

@@ -8,6 +8,7 @@ const path = require("path");
 const cors = require("cors");
 const { error } = require("console");
 const product = require("./routes/product.js");
+const user = require("./routes/user.js")
 app.use(express.json());
 app.use(cors());
 mongoose.connect("mongodb+srv://bduchuy2002:huypro123@cluster0.dabnfgo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -43,6 +44,7 @@ app.post("/upload", upload.single('product'), (req,res) => {
 
 
 app.use("/v1/product", product);
+app.use("/v1/user", user);
 app.listen(port, (error) => {
     if (!error) {
         console.log("Server Running on Port : " + port) 

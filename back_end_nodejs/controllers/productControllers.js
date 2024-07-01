@@ -1,6 +1,6 @@
 const { Product } = require("../models/model");
 
-const bookingControllers = {
+const productControllers = {
     //Api add Product
     addproduct: async (req, res) => {
         let products = await Product.find({});
@@ -51,4 +51,4 @@ const bookingControllers = {
 
 };
 
-module.exports = bookingControllers;
+module.exports = productControllers;

@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const bookingControllers = require("../controllers/productControllers"); // Updated import
+const productControllers = require("../controllers/productControllers"); // Updated import
 
-router.post("/addproduct", bookingControllers.addproduct);
-router.post("/deleteproduct", bookingControllers.deleteproduct);
-router.get("/getallproduct", bookingControllers.getallproduct);
+router.post("/addproduct", productControllers.addproduct);
+router.post("/deleteproduct", productControllers.deleteproduct);
+router.get("/getallproduct", productControllers.getallproduct);
 module.exports = router;
