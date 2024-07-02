@@ -47,6 +47,9 @@ const userControllers = {
         } else {
             res.json({success:false,errors:"Wrong Email Id"})
         }
+    },
+    newcollections: async (req, res) => {
+        
     }
 }
 module.exports = userControllers;

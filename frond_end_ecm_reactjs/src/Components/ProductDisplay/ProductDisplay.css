@@ -1,11 +1,25 @@
+
+  
+            
+         
+      
+
 .productdisplay{
     display: flex;
     margin: 0px 170px;
-
+display: flex;
+    margin: 0px 170px;
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%;
+    /* 100% / 0.75 */
+    height: 133.33%;
+    
 }
 .productdisplay-left{
     display: flex;
     gap: 17px;
+    
 }
 .productdisplay-img-list{
     display: flex;
